@@ -1,0 +1,182 @@
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper{
+    height: 52px;
+}
+.shortcut .wrapper ul{
+    float: right;
+}
+/* li里边可以不加margin,直接加line-height */
+.shortcut .wrapper li{
+    float: left;
+    line-height: 52px;
+
+}
+.shortcut .wrapper .last{
+    border: none;
+}
+
+.shortcut .wrapper li a {
+    padding:0 16px ;
+    border-right:1px solid #666666 ;
+    line-height: 14px;
+    font-size: 14px;
+    color: #dcdcdc;
+
+}
+/* 精灵图设置后可以用chrome调试工具来调试位置 */
+.shortcut span{
+    margin: 0 8px;
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-image: url(../image/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+.header{
+    margin-top: 30px;
+    height: 70px;
+}
+.header .logo{
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+.header .logo img{
+    width: 80px;
+    height: 80px;
+    margin-left: 100px;
+}
+.header .nav{
+    display: inline-block;
+    margin-left: 40px;
+    float: left;
+    height: 30px;
+}
+.header .nav li{
+    float: left;
+    margin-right: 48px;
+
+}
+.header .nav li a{
+    line-height: 70px;
+    font-size: 16px;
+    padding-bottom: 7px;
+}
+.header .nav li a:hover{
+    color:#27ba9b ;
+    border-bottom: 1px solid #27ba9b;
+}
+/* 搜索框的左外边距,等于实际搜索框和导航的距离,减去导航的右边距,82-48=34 */
+.header .search{
+    position: relative;
+    float: left;
+    margin-left: 34px;
+    margin-top:24px ;
+    border-bottom: 2px solid #e7e7e7;
+    width: 172px;
+    height: 30px;
+}
+
+.header input{
+    width: 172px;
+    height: 28px;
+    padding-left: 30px ;
+}
+.header input::placeholder{
+    font-size: 14px;
+    color: #cccccc;
+}
+.header .search span{
+    position: absolute;
+    left: 2px;
+    top: 0;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../image/sprites.png);
+    background-position: -79px -69px;
+}
+.footer{
+    height: 343px;
+    background-color: #333;
+}
+.footer .wrapper{
+    width: 1393px;
+}
+.footer .up{
+    padding-top: 59px;
+    padding-left: 135px;
+    height: 173px;
+    border-bottom: 3px solid #434343;
+}
+.footer .up li{
+    width: 300px;
+    height: 58px;
+    margin-right:100px ;
+    float: left;
+
+}
+.footer .up li:nth-child(3){
+    margin: 0;
+
+}
+.footer .up .box1::before{
+    display: inline-block;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../image/sprites.png);
+    background-position: 0 0;
+    vertical-align:-75%;
+}
+.footer .up .box1 span{
+    font-size: 28px;
+    color: #fff;
+}
+.footer .up .box2::before{
+    display: inline-block;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../image/sprites.png);
+    background-position: -129px 0px;
+    vertical-align:-75%;
+}
+.footer .up .box2 span{
+    font-size: 28px;
+    color: #fff;
+}
+.footer .up .box3::before{
+    display: inline-block;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../image/sprites.png);
+    background-position:-64px 0px;
+    vertical-align:-75%;
+}
+.footer .up .box3 span{
+    font-size: 28px;
+    color: #fff;
+}
+.footer .down{
+    padding-top:48px ;
+    text-align: center;
+}
+.footer .down p{
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+}
+.footer .down a{
+    font-size: 14px;
+    color: #999;
+}
